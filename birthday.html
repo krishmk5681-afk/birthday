@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday 🎂</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #1a2a3a, #2c3e50, #1f1c2c);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', sans-serif;
+      overflow: hidden;
+      color: white;
+    }
+
+    /* Floating food emojis */
+    .food {
+      position: absolute;
+      font-size: 2.2rem;
+      animation: floatUp linear infinite;
+      opacity: 0.7;
+    }
+
+    @keyframes floatUp {
+      from {
+        transform: translateY(110vh) rotate(0deg);
+      }
+      to {
+        transform: translateY(-120vh) rotate(360deg);
+      }
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 0 40px rgba(255, 200, 150, 0.3);
+      animation: float 4s ease-in-out infinite;
+      max-width: 420px;
+      z-index: 2;
+      backdrop-filter: blur(6px);
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+
+    h1 {
+      font-size: 2.6em;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, #ffdd99, #ff9f43);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff9f43; }
+      to { text-shadow: 0 0 30px #ffdd99; }
+    }
+
+    p {
+      font-size: 1.05em;
+      line-height: 1.7;
+      opacity: 0.95;
+      margin: 15px 0;
+    }
+
+    .cake {
+      font-size: 4.5em;
+      margin: 15px 0;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 0.9em;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Floating Food Items -->
+  <div class="food" style="left:5%; animation-duration:18s;">🎂</div>
+  <div class="food" style="left:15%; animation-duration:22s;">🍫</div>
+  <div class="food" style="left:25%; animation-duration:20s;">🧁</div>
+  <div class="food" style="left:35%; animation-duration:26s;">🥤</div>
+  <div class="food" style="left:45%; animation-duration:19s;">🍩</div>
+  <div class="food" style="left:55%; animation-duration:24s;">🍰</div>
+  <div class="food" style="left:65%; animation-duration:21s;">🍪</div>
+  <div class="food" style="left:75%; animation-duration:27s;">🍦</div>
+  <div class="food" style="left:85%; animation-duration:23s;">🍓</div>
+
+  <!-- Main Card -->
+  <div class="card">
+    <div class="cake">🎂✨</div>
+
+    <h1>Happy Birthday</h1>
+
+    <p>
+      May this day be filled with sweet moments,
+      warm smiles, and little celebrations that make your heart happy.
+      May the year ahead be as comforting as your favorite treats
+      and as joyful as today feels.
+    </p>
+
+    <div class="footer">
+      Celebrating you, one sweet moment at a time 🍫🎉
+    </div>
+  </div>
+
+</body>
+</html>
